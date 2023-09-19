@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.web.HTMLEditor?>
 
-
 <AnchorPane fx:id="root" prefHeight="915.0" prefWidth="1312.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
    <children>
       <HTMLEditor htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="3.0" layoutY="36.0" prefHeight="772.0" prefWidth="1085.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="-3.0" />
@@ -33,7 +32,7 @@
           <Menu mnemonicParsing="false" text="Help">
             <items>
               <MenuItem fx:id="mnuitmUserGuide" mnemonicParsing="false" onAction="#mnuitmUserGuideOnAction" text="User Guide" />
-                  <MenuItem mnemonicParsing="false" text="About Us" />
+                  <MenuItem fx:id="mnuitmAboutUs" mnemonicParsing="false" onAction="#mnuitmAboutUsOnAction" text="About Us" />
             </items>
           </Menu>
         </menus>

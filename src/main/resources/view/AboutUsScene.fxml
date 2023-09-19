@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.AboutUsSceneController">
+   <children>
+      <Button fx:id="btClose" layoutX="482.0" layoutY="331.0" mnemonicParsing="false" onAction="#btnCloseOnAction" prefHeight="33.0" prefWidth="94.0" text="Close" />
+      <ImageView fitHeight="39.0" fitWidth="129.0" layoutX="240.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset.img/png-transparent-editing-computer-icons-delete-button-miscellaneous-text-label.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="43.0" layoutY="77.0" prefHeight="262.0" prefWidth="420.0" spacing="10.0">
+         <children>
+            <Label text="Copyright Statement : " />
+            <Label text="License :" />
+            <Label text="Version :" />
+            <Label text="Name : " />
+            <Label text="Edit Team..." />
+            <Label text="Label" />
+            <Label text="Label" />
+            <Label text="Label" />
+            <Label text="Label" />
+            <Label text="Label" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
