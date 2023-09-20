@@ -8,8 +8,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class SplashScreenSceneController implements Initializable {
-    @FXML
-    private StackPane rootPane;
+
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

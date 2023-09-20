@@ -2,15 +2,15 @@
 
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.AnchorPane?>
 
 
-<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="251.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="rootSplash" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fitHeight="268.0" fitWidth="692.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="238.0" fitWidth="600.0" layoutX="-5.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../asset.img/png-transparent-editing-computer-icons-delete-button-miscellaneous-text-label.png" />
          </image>
       </ImageView>
    </children>
-</StackPane>
+</AnchorPane>

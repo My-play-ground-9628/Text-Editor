@@ -20,17 +20,13 @@ import java.util.Optional;
 import static javax.swing.text.StyleConstants.Background;
 
 public class AppInitializer extends Application {
-
-    public static boolean isSplash = false;
-
-
     public static void main(String[] args) {
         launch(args);
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        StackPane rootPane = FXMLLoader.load(getClass().getResource("/view/SplashScreenScene.fxml"));
+        AnchorPane rootPane = FXMLLoader.load(getClass().getResource("/view/SplashScreenScene.fxml"));
         Scene splashScene = new Scene(rootPane);
         primaryStage.setScene(splashScene);
         primaryStage.setTitle("Undecorated Window");
@@ -70,7 +66,7 @@ public class AppInitializer extends Application {
         Scene mainScene = new Scene(root);
         Stage EditorStage = new Stage();
         EditorStage.setScene(mainScene);
-        EditorStage.setTitle("Text Editor");
+        EditorStage.setTitle("Edit Text Editor");
         EditorStage.centerOnScreen();
         EditorStage.show();
         EditorStage.setMaximized(true);

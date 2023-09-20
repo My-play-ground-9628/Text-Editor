@@ -82,48 +82,4 @@ public class MainSceneController {
         stage.show();
     }
 
-//    @Override
-//    public void initialize(URL url, ResourceBundle rb) {
-//        if (!AppInitializer.isSplash){
-//            loadSplashScreen();
-//
-//        }
-//    }
-//
-//    private void loadSplashScreen (){
-//        try {
-//            AppInitializer.isSplash = true;
-//            StackPane pane = FXMLLoader.load(getClass().getResource("/view/SplashScreenScene.fxml"));
-//            root.getChildren().setAll(pane);
-//
-//            FadeTransition fadeIn = new FadeTransition(Duration.seconds(2),pane);
-//            fadeIn.setFromValue(0);
-//            fadeIn.setToValue(1);
-//            fadeIn.setCycleCount(1);
-//
-//            FadeTransition fadeout = new FadeTransition(Duration.seconds(2),pane);
-//            fadeout.setFromValue(1);
-//            fadeout.setToValue(0);
-//            fadeout.setCycleCount(1);
-//
-//            fadeIn.play();
-//
-//            fadeIn.setOnFinished((event -> {
-//                fadeout.play();
-//            }));
-//
-//            fadeout.setOnFinished((event -> {
-//                try {
-//                    AnchorPane textEditor = FXMLLoader.load(getClass().getResource("/view/MainScene.fxml"));
-//                    root.getChildren().setAll(textEditor);
-//                } catch (IOException e) {
-//                    throw new RuntimeException(e);
-//                }
-//            }));
-//
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-
-//    }
 }
