@@ -17,8 +17,10 @@ public class AboutUsSceneController {
     public Button btClose;
     public AnchorPane root;
 
+    Stage stage;
+
     public void btnCloseOnAction(ActionEvent e) throws Exception{
-
-
+        stage = (Stage) root.getScene().getWindow();
+        stage.close();
     }
 }

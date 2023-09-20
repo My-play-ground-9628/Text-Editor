@@ -6,19 +6,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.web.HTMLEditor?>
 
-<AnchorPane fx:id="root" prefHeight="915.0" prefWidth="1312.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
+<AnchorPane fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1111.0" prefWidth="1453.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainSceneController">
    <children>
-      <HTMLEditor htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="3.0" layoutY="36.0" prefHeight="772.0" prefWidth="1085.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="-3.0" />
+      <HTMLEditor htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" maxHeight="1111.0" maxWidth="1453.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1111.0" prefWidth="1453.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <MenuBar layoutX="5.0" layoutY="2.0" prefHeight="32.0" prefWidth="155.0" AnchorPane.leftAnchor="5.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem fx:id="mnuitmNew" mnemonicParsing="false" onAction="#mnuitmNewOnAction" text="New" />
+              <MenuItem fx:id="menuItemNew" mnemonicParsing="false" onAction="#menuItmNewOnAction" text="New" />
                   <MenuItem mnemonicParsing="false" text="Open" />
                   <MenuItem mnemonicParsing="false" text="Save" />
                   <MenuItem mnemonicParsing="false" text="Save As" />
                   <MenuItem mnemonicParsing="false" text="Print" />
-                  <MenuItem fx:id="mnuitmExit" mnemonicParsing="false" onAction="#mnuitmExitOnAction" text="Exit" />
+                  <MenuItem fx:id="menuItemExit" mnemonicParsing="false" onAction="#menuItemExitOnAction" text="Exit" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
@@ -31,8 +31,8 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
             <items>
-              <MenuItem fx:id="mnuitmUserGuide" mnemonicParsing="false" onAction="#mnuitmUserGuideOnAction" text="User Guide" />
-                  <MenuItem fx:id="mnuitmAboutUs" mnemonicParsing="false" onAction="#mnuitmAboutUsOnAction" text="About Us" />
+              <MenuItem fx:id="menuItemUserGuide" mnemonicParsing="false" onAction="#menuItemUserGuideOnAction" text="User Guide" />
+                  <MenuItem fx:id="menuItemAboutUs" mnemonicParsing="false" onAction="#mnuitmAboutUsOnAction" text="About Us" />
             </items>
           </Menu>
         </menus>

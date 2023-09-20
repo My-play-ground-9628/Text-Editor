@@ -1,29 +1,36 @@
 package lk.ijse.dep11;
 
+import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Background;
+import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import javafx.util.Duration;
 
+import java.io.IOException;
+import java.net.URL;
 import java.util.Optional;
+import java.util.ResourceBundle;
 
 public class MainSceneController {
     public AnchorPane root;
-    public MenuItem mnuitmNew;
-    public MenuItem mnuitmExit;
-    public MenuItem mnuitmUserGuide;
-    public MenuItem mnuitmAboutUs;
+    public MenuItem menuItemNew;
+    public MenuItem menuItemExit;
+    public MenuItem menuItemUserGuide;
+    public MenuItem menuItemAboutUs;
 
 
-    public void mnuitmNewOnAction(ActionEvent actionEvent) throws Exception{
+    public void menuItmNewOnAction(ActionEvent actionEvent) throws Exception{
         AnchorPane scene1Root = FXMLLoader.load(getClass().getResource("/view/MainScene.fxml"));
         Scene scene1 = new Scene(scene1Root);
         Stage stage = new Stage();
@@ -33,7 +40,7 @@ public class MainSceneController {
         stage.show();
     }
 
-    public void mnuitmExitOnAction(ActionEvent actionEvent) throws Exception{
+    public void menuItemExitOnAction(ActionEvent actionEvent) throws Exception{
         AnchorPane scene1Root = FXMLLoader.load(getClass().getResource("/view/MainScene.fxml"));
         Scene scene1 = new Scene(scene1Root);
         Stage stage = new Stage();
@@ -46,7 +53,8 @@ public class MainSceneController {
 
     }
 
-    public void mnuitmUserGuideOnAction(ActionEvent actionEvent) throws Exception{
+    public void menuItemUserGuideOnAction(ActionEvent actionEvent) throws Exception {
+
         AnchorPane userGuideSceneRoot = FXMLLoader.load(getClass().getResource("/view/UserGuideScene.fxml"));
         Scene userGuideScene = new Scene(userGuideSceneRoot);
         Stage stage = new Stage();
@@ -55,7 +63,7 @@ public class MainSceneController {
         stage.setScene(userGuideScene);
         stage.setTitle("User Guide for Text Editor");
         stage.show();
-        stage.setMaximized(true);
+        stage.setMaximized(false);
 
 
     }
@@ -73,4 +81,49 @@ public class MainSceneController {
         stage.centerOnScreen();
         stage.show();
     }
+
+//    @Override
+//    public void initialize(URL url, ResourceBundle rb) {
+//        if (!AppInitializer.isSplash){
+//            loadSplashScreen();
+//
+//        }
+//    }
+//
+//    private void loadSplashScreen (){
+//        try {
+//            AppInitializer.isSplash = true;
+//            StackPane pane = FXMLLoader.load(getClass().getResource("/view/SplashScreenScene.fxml"));
+//            root.getChildren().setAll(pane);
+//
+//            FadeTransition fadeIn = new FadeTransition(Duration.seconds(2),pane);
+//            fadeIn.setFromValue(0);
+//            fadeIn.setToValue(1);
+//            fadeIn.setCycleCount(1);
+//
+//            FadeTransition fadeout = new FadeTransition(Duration.seconds(2),pane);
+//            fadeout.setFromValue(1);
+//            fadeout.setToValue(0);
+//            fadeout.setCycleCount(1);
+//
+//            fadeIn.play();
+//
+//            fadeIn.setOnFinished((event -> {
+//                fadeout.play();
+//            }));
+//
+//            fadeout.setOnFinished((event -> {
+//                try {
+//                    AnchorPane textEditor = FXMLLoader.load(getClass().getResource("/view/MainScene.fxml"));
+//                    root.getChildren().setAll(textEditor);
+//                } catch (IOException e) {
+//                    throw new RuntimeException(e);
+//                }
+//            }));
+//
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
+
+//    }
 }
